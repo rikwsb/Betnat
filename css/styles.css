@@ -1,0 +1,40 @@
+body{
+    font-family: Arial;
+}
+
+img{
+    width: 6vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-bet{
+    margin: 2vh auto;
+}
+
+.box-aposta{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vh;
+    background-color: gray;
+    border-radius: 15px;
+}
+
+.teams-logos{
+    width: 40%;
+    margin: auto;
+    padding: 1vh;
+}
+
+.logo-team1{
+    float: left;
+}
+
+.logo-team2{
+    float: right;
+}
