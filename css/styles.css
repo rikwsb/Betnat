@@ -48,6 +48,18 @@ h1, h2{
 
 /* ····· BUTTONS ······· */
 
+.action-buttons.container {
+    padding: 6vh 35%;
+}
+
+.action-buttons button{
+
+    border-radius: 4px;
+    padding: 1.5vh 2.75vh;
+    border: none;
+    margin: 0vh 1vh;
+}
+
 .buttons-bet button {
     border-radius: 4px;
     padding: 0.5vh 1.75vh;

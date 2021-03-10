@@ -15,4 +15,6 @@ if (isset($_POST['bet'])) {
     array_push($_SESSION['apostes'], $bet);
 }
 
+unset($_POST);
+
 

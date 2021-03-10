@@ -65,6 +65,7 @@
             </div>
         </form>
 
+    <div class="action-buttons container">
         <form action="." method="post">
             <button type="submit" name="des" value="true">ESBORRAR SESSIO</button>
         </form>
@@ -72,6 +73,7 @@
         <form action="realitzarApostes.php" method="POST">
             <button type="submit">REALITZAR APOSTES</button>
         </form>
+    </div>
 
         <div>
             <?php
