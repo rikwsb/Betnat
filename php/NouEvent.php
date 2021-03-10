@@ -8,7 +8,7 @@ class NouEvent
     public $club1;
     public $club2;
     public $quota1;
-    public $quotaX;
+    public $quotax;
     public $quota2;
     public $logoClub1;
     public $logoClub2;
@@ -19,7 +19,7 @@ class NouEvent
         $this->club1 = $club1;
         $this->club2 = $club2;
         $this->quota1 = $quota1;
-        $this->quotaX = $quotaX;
+        $this->quotax = $quotaX;
         $this->quota2 = $quota2;
         $this->logoClub1 = "media/" . strtolower(str_replace(' ', '', $club1)) . ".png";
         $this->logoClub2 = "media/" . strtolower(str_replace(' ', '', $club2)) . ".png";

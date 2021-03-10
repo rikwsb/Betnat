@@ -6,10 +6,10 @@ session_start();
 
 $idApostaConfirmada = null;
 
-if(isset($_POST['bet'])){
+//if(isset($_POST['bet'])){
     $apostes = $_SESSION['apostat'];
-    $quantitat = $_POST['quantitat'];
-    $idApostaConfirmada = $_POST['bet'];
+    $quantitat = $_SESSION['quantitat'];
+    $idApostaConfirmada = $_SESSION['bet'];
 
     if($idApostaConfirmada == "combi"){
         foreach($apostes as $ap){
@@ -23,7 +23,7 @@ if(isset($_POST['bet'])){
         $apostaSeleccionada->setQuantitat($quantitat);
         guardaAposta($apostaSeleccionada);
         mostrarApostat($apostaSeleccionada);
-    }
+    //}
 }
 
 function mostrarApostat($ap){

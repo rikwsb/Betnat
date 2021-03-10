@@ -5,6 +5,22 @@
 
     session_start();
 
+    if(isset($_POST['delete'])){
+        $event = unserialize($_SESSION['events']);
+        $aposta = $_SESSION['apostes'];
+        $index = arrayRemoveAposta($event ,$aposta, $_POST['delete']);
+        $_SESSION['apostes'] = $index;
+        unset($_POST['delete']);
+        header("Location: realitzarApostes.php");
+    }elseif (isset($_POST['bet'])){
+        $_SESSION['bet'] = $_POST['bet'];
+        header("Location: confirmaAposta.php");
+    }
+
+    if(isset($_POST['quantitat'])){
+        $_SESSION['quantitat'] = $_POST['quantitat'];
+    }
+
     $event = unserialize($_SESSION['events']);
     $apostes = $_SESSION['apostes'];
 
@@ -14,12 +30,6 @@
     $quota = 0;
     $i = 0;
 
-    if(isset($_POST['delete'])){
-        array_remove($event, $_POST['delete']);
-        $_SESSION['apostes'] = $apostes;
-        unset($_POST);
-    } elseif(isset($_POST['bet']))header("Location: realitzarApostes.php");
-
     foreach($apostes as $aS){
         $seleccio = explode('-', $aS);
         $evSe = buscarEvent($seleccio[0], $event);
@@ -28,24 +38,21 @@
             $quota = $evSe->quota1;
             $clubSeleccionat = $evSe->club1;
         }elseif ($seleccio[1] == "x"){
-            $quota = $evSe->quotaX;
+            $quota = $evSe->quotax;
             $clubSeleccionat = 'Empat';
         }elseif ($seleccio[1] == 2){
             $quota = $evSe->quota2;
             $clubSeleccionat = $evSe->club2;
         }
 
-        array_push($apostesRealitzades, new Aposta($i, $evSe->dataEvent, $evSe->club1, $evSe->club2, $clubSeleccionat, $quota));
+        array_push($apostesRealitzades, new Aposta($seleccio[0], $evSe->dataEvent, $evSe->club1, $evSe->club2, $clubSeleccionat, $quota));
+
         $_SESSION['apostat'] = $apostesRealitzades;
         $i++;
     }
 
-
-
     function mostrarApostar(){
-
         global $apostesRealitzades;
-
         foreach($apostesRealitzades as $ap){
             echo "<tr><form action='realitzarApostes.php' method='post'>";
             echo "<td>" . $ap->dataAposta . "</td>";
@@ -78,13 +85,18 @@
  * @param string $prop
  * @return array
  */
-function array_remove($array, $idToErase)
+function arrayRemoveAposta($arrayEvent, $arrayApostes, $idToErase)
 {
-    foreach($array as $ar){
-        if(buscarEvent($idToErase, $array) == buscarEvent($ar->idEvent, $array)){
-            unset($array->$ar);
+    $index = array();
+    foreach($arrayApostes as $ar){
+        $seleccio = explode('-', $ar);
+        $quota = 'quota' . $seleccio[1];
+        $obj = buscarEvent($seleccio[0], $arrayEvent)->$quota;
+        if($seleccio[0] != $idToErase && $obj != $seleccio[1]){
+                array_push($index, $ar);
         }
     }
+    return $index;
 }
 
 ?>

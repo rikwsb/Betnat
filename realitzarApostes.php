@@ -22,9 +22,9 @@
             <th></th>
         </tr>
         </thead>
-
         <tbody>
-            <?php mostrarApostar(); ?>
+
+        <?php mostrarApostar(); ?>
         </tbody>
 
     </table>
