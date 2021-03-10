@@ -21,7 +21,7 @@
 
         foreach ($events as $event) {
             echo "<div class='box-aposta'>";
-            echo "<p>" . $event->dataEvent . "</p>";
+            echo "<h3>" . $event->dataEvent . "</h3>";
             echo "<p>" . $event->club1 . " x " . $event->club2 . "</p>";
             echo "<div class='teams-logos'>";
             echo "<img class='logo-team1' src='" . $event->logoClub1 . "'>";
@@ -47,32 +47,43 @@
     <link type="text/css" rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <h2>NUMERO D'APOSTES <?php echo count($_SESSION['apostes']); ?></h2>
-    <form name="ey" action="" method="POST">
-    <div class="container">
+    <nav class="menu">
+        <ul class="menu-list">
+            <li><a href="#"><h1>BETNAT EL FUSTER</h1></a></li>
+            <li><a href="#"><img></a></li>
+            <li><a href="#"><h2>NUMERO D'APOSTES <?php echo count($_SESSION['apostes']); ?></h2></a></li>
+        </ul>
+    </nav>
 
-        <?php mostrarEvents($events); ?>
+        <h1 class="title">PROXIMS EVENTS</h1>
 
-    </div>
-        <button type="submit" name="des" value="true">ESBORRAR SESSIO</button>
-    </form>
+        <form name="ey" action="" method="POST">
+            <div class="container">
 
-    <form action="realitzarApostes.php" method="POST">
-        <button type="submit">REALITZAR APOSTES</button>
-    </form>
+                <?php mostrarEvents($events); ?>
 
-    <div>
-        <?php
-                if(isset($_COOKIE['apostesPagades'])){
-                    $lmao = json_decode($_COOKIE['apostesPagades']);
-                    echo 'APOSTES COMPLETADES: <br>';
-                    foreach($lmao as $galetaxd){
-                        echo $galetaxd . '<br>';
-                    }
+            </div>
+        </form>
+
+        <form action="." method="post">
+            <button type="submit" name="des" value="true">ESBORRAR SESSIO</button>
+        </form>
+
+        <form action="realitzarApostes.php" method="POST">
+            <button type="submit">REALITZAR APOSTES</button>
+        </form>
+
+        <div>
+            <?php
+            if(isset($_COOKIE['apostesPagades'])){
+                $lmao = json_decode($_COOKIE['apostesPagades']);
+                echo 'APOSTES COMPLETADES: <br>';
+                foreach($lmao as $galetaxd){
+                    echo $galetaxd . '<br>';
                 }
-        ?>
-    </div>
+            }
+            ?>
+        </div>
 
 </body>
 </html>
