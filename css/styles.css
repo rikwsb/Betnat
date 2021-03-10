@@ -1,9 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
 body{
-    font-family: Arial;
+    background-color: #efefef;
 }
 
-img{
-    width: 6vh;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2{
+    color: #1f1f1f;
+    font-family: "Oxygen";
+}
+
+.title{
+    text-align: center;
+    padding-bottom: 4vh;
+}
+
+/* ············· NAV ··············· */
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5vh;
+}
+
+/* ········ CONTAINER ··········· */
+
+.content{
+    padding: 3vh 10vh;
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
 }
 
 .container{
@@ -11,19 +46,46 @@ img{
     justify-content: space-around;
 }
 
-.buttons-bet{
-    margin: 2vh auto;
+/* ····· BUTTONS ······· */
+
+.buttons-bet button {
+    border-radius: 4px;
+    padding: 0.5vh 1.75vh;
+    border: none;
+    margin: 0vh 1vh;
 }
 
+.buttons-bet {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 10vh;
+}
+
+/* ········ BOX APOSTA ········· */
+
 .box-aposta{
+    font-family: "Oxygen";
+    color: #dfe5e9;
     width: 20%;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 2vh;
-    background-color: gray;
-    border-radius: 15px;
+    background-color: #29333f;
+    border-radius: 3px;
 }
+
+.box-aposta h3 {
+    font-family: "Inconsolata";
+    color: #fffe7f;
+    margin: 1vh 0vh;
+}
+
+.box-aposta img{
+    width: 6vh;
+}
+
+/* ······· LOGOS TEAMS ········ */
 
 .teams-logos{
     width: 40%;
