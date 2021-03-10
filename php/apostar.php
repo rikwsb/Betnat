@@ -90,9 +90,7 @@ function arrayRemoveAposta($arrayEvent, $arrayApostes, $idToErase)
     $index = array();
     foreach($arrayApostes as $ar){
         $seleccio = explode('-', $ar);
-        $quota = 'quota' . $seleccio[1];
-        $obj = buscarEvent($seleccio[0], $arrayEvent)->$quota;
-        if($seleccio[0] != $idToErase && $obj != $seleccio[1]){
+        if($seleccio[0] != $idToErase){
                 array_push($index, $ar);
         }
     }

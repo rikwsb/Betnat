@@ -29,7 +29,7 @@
             echo "</div>";
             echo "<div class='buttons-bet'>";
             echo "<button type='submit' name='bet' value='" . $event->idEvent . "-1'>". $event->quota1 ."</button>";
-            echo "<button type='submit' name='bet' value='" . $event->idEvent . "-x'>". $event->quotaX ."</button>";
+            echo "<button type='submit' name='bet' value='" . $event->idEvent . "-x'>". $event->quotax ."</button>";
             echo "<button type='submit' name='bet' value='" . $event->idEvent . "-2'>". $event->quota2 ."</button>";
             echo "</div>";
             echo "</div>";
