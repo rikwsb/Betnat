@@ -14,15 +14,17 @@ $idApostaConfirmada = null;
     if($idApostaConfirmada == "combi"){
 
         $total = 0;
+        $quotaTotal = 0;
 
         foreach($apostes as $ap){
             $apostaSeleccionada = buscarAposta($ap->idAposta, $apostes);
             $apostaSeleccionada->setQuantitat($quantitat);
-            $total += intval($apostaSeleccionada->quantitat);
+            $total += floatval($apostaSeleccionada->quantitat);
+            $quotaTotal += floatval($apostaSeleccionada->quotaSeleccionada);
             guardaAposta($apostaSeleccionada);
             mostrarApostat($apostaSeleccionada);
-            combinada($total);
         }
+        combinada($total, $quotaTotal);
     } else {
         $apostaSeleccionada = buscarAposta($idApostaConfirmada, $apostes);
         $apostaSeleccionada->setQuantitat($quantitat);
@@ -42,12 +44,15 @@ function mostrarApostat($ap){
     echo "</tr>";
 }
 
-function combinada($total){
+function combinada($total, $quota){
+    $ganancies = floatval($total) * floatval($quota);
     echo '<tr>';
     echo '<td></td>';
     echo '<td></td>';
     echo '<td>COMBINADA</td>';
+    echo '<td>' . $quota . '</td>';
     echo '<td>' . $total . '</td>';
+    echo '<td>' . $ganancies . '</td>';
     echo '</tr>';
 }
 
@@ -64,6 +69,8 @@ function buscarAposta($id, $array){
 }
 
 function guardaAposta($aposta){
-    $_SESSION['apostesConfirmades'] = array();
+    if(!isset($_SESSION['apostesConfirmades'])){
+        $_SESSION['apostesConfirmades'] = array();
+    }
     array_push($_SESSION['apostesConfirmades'], $aposta);
 }

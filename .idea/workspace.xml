@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b00a297-cd98-4011-99ec-cf85eff84da3" name="Default Changelist" comment="Rubedo">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Aposta.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Aposta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/confirmacioApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/confirmacioApostes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/realitzaApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/realitzaApostes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realitzarApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/realitzarApostes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +100,7 @@
       <workItem from="1615320628088" duration="1863000" />
       <workItem from="1615397053300" duration="1754000" />
       <workItem from="1615398949935" duration="5406000" />
+      <workItem from="1615461375965" duration="1666000" />
     </task>
     <task id="LOCAL-00001" summary="Rubedo">
       <created>1615248639403</created>
