@@ -30,7 +30,7 @@
                 <td></td>
                 <td></td>
                 <td>COMBINADA</td>
-                <td></td>
+                <td><?php echo getQuotaCombinada(); ?></td>
                 <td><input type='number' name='quantitat'></td>
                 <td><button type='submit' name='bet' value='combi'>BET</button></td>
             </tr>

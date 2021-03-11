@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b00a297-cd98-4011-99ec-cf85eff84da3" name="Default Changelist" comment="Rubedo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/confirmacioApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/confirmacioApostes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/realitzaApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/realitzaApostes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/apostar.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/apostar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/realitzarApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/realitzarApostes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,10 +53,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProyectoMatriculas" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Presta/modules/klspedidos/klspedidos.php" />
+>>>>>>> 424129846b14e1d2157a8bcb4fe3420c8b50b3a2
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.XAMPP">
@@ -99,7 +100,14 @@
       <workItem from="1615307341472" duration="9943000" />
       <workItem from="1615319740487" duration="802000" />
       <workItem from="1615320628088" duration="1863000" />
+<<<<<<< HEAD
       <workItem from="1615396442303" duration="4061000" />
+=======
+      <workItem from="1615397053300" duration="1754000" />
+      <workItem from="1615398949935" duration="5406000" />
+      <workItem from="1615461375965" duration="2004000" />
+      <workItem from="1615463690248" duration="3046000" />
+>>>>>>> 424129846b14e1d2157a8bcb4fe3420c8b50b3a2
     </task>
     <task id="LOCAL-00001" summary="Rubedo">
       <created>1615248639403</created>
@@ -145,6 +153,28 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
+<<<<<<< HEAD
+=======
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php/apostar.php</url>
+          <line>94</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php/apostar.php</url>
+          <line>96</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php/apostar.php</url>
+          <line>10</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> 424129846b14e1d2157a8bcb4fe3420c8b50b3a2
     <watches-manager>
       <configuration name="index.php">
         <watch expression="$_REQUEST" />

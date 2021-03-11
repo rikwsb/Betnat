@@ -2,7 +2,8 @@
 
 if (isset($_POST['des'])) {
     session_destroy();
-    setcookie('apostesPagades', "", 0);
+    setcookie('apostesPagades', '', 1, "/Betnat/php");
+    setcookie('apostesPagades', '', 1, "/Betnat");
     header('Location: .');
 }
 

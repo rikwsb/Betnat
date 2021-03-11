@@ -31,7 +31,7 @@ class Aposta
     }
 
     public function calculaGanancies(){
-        return $this->quantitat * $this->quotaSeleccionada;
+        return intval($this->quantitat * $this->quotaSeleccionada);
     }
 
 }
