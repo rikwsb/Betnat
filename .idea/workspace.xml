@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b00a297-cd98-4011-99ec-cf85eff84da3" name="Default Changelist" comment="Rubedo">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Aposta.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Aposta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/confirmacioApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/confirmacioApostes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/realitzaApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/realitzaApostes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/apostar.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/apostar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realitzarApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/realitzarApostes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +53,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Presta/modules/klspedidos/klspedidos.php" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.XAMPP">
@@ -100,7 +98,8 @@
       <workItem from="1615320628088" duration="1863000" />
       <workItem from="1615397053300" duration="1754000" />
       <workItem from="1615398949935" duration="5406000" />
-      <workItem from="1615461375965" duration="1666000" />
+      <workItem from="1615461375965" duration="2004000" />
+      <workItem from="1615463690248" duration="3046000" />
     </task>
     <task id="LOCAL-00001" summary="Rubedo">
       <created>1615248639403</created>
@@ -154,12 +153,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php/apostar.php</url>
-          <line>88</line>
+          <line>94</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php/apostar.php</url>
-          <line>90</line>
+          <line>96</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">

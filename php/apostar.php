@@ -24,14 +24,18 @@
     $event = unserialize($_SESSION['events']);
     $apostes = $_SESSION['apostes'];
 
+    $GLOBALS['quotaCombi'] = 0;
+
     $apostesRealitzades = array();
     $combinada = 0;
     $clubSeleccionat = "";
     $quota = 0;
     $i = 0;
+    $quotaTotal = 0;
 
     foreach($apostes as $aS){
         $seleccio = explode('-', $aS);
+        $id = $aS;
         $evSe = buscarEvent($seleccio[0], $event);
 
         if($seleccio[1] == 1){
@@ -45,7 +49,9 @@
             $clubSeleccionat = $evSe->club2;
         }
 
-        array_push($apostesRealitzades, new Aposta($seleccio[0], $evSe->dataEvent, $evSe->club1, $evSe->club2, $clubSeleccionat, $quota));
+        $quotaTotal += floatval($quota);
+        $GLOBALS['$quotaTotal'] = $quotaTotal;
+        array_push($apostesRealitzades, new Aposta($id, $evSe->dataEvent, $evSe->club1, $evSe->club2, $clubSeleccionat, $quota));
 
         $_SESSION['apostat'] = $apostesRealitzades;
         $i++;
@@ -56,7 +62,7 @@
         foreach($apostesRealitzades as $ap){
             echo "<tr><form action='realitzarApostes.php' method='post'>";
             echo "<td>" . $ap->dataAposta . "</td>";
-            echo "<td><table><tr><td>" . $ap->logoClub1 . "</td></tr><tr><td>" . $ap->logoClub2 . "</td></tr></table></td>";
+            //echo "<td><table><tr><td>" . $ap->logoClub1 . "</td></tr><tr><td>" . $ap->logoClub2 . "</td></tr></table></td>";
             echo "<td><table><tr><td>" . $ap->club1 . "</td></tr><tr><td>" . $ap->club2 . "</td></tr></table></td>";
             echo "<td>" . $ap->clubSeleccionat . "</td>";
             echo "<td>" . $ap->quotaSeleccionada . "</td>";
@@ -89,13 +95,17 @@ function arrayRemoveAposta($arrayEvent, $arrayApostes, $idToErase)
 {
     $index = array();
     foreach($arrayApostes as $ar){
-        $seleccio = explode('-', $ar);
-        if($seleccio[0] != $idToErase){
+        if($ar->idAposta != $idToErase){
                 array_push($index, $ar);
         }
     }
     return $index;
 }
+
+function getQuotaCombinada(){
+    return $GLOBALS['quotaTotal'];
+}
+
 
 ?>
 
