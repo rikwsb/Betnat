@@ -14,6 +14,15 @@ class Aposta
     public $quotaSeleccionada;
     public $quantitat;
 
+    /**
+     * Aposta constructor.
+     * @param $idAposta
+     * @param $dataAposta
+     * @param $club1
+     * @param $club2
+     * @param $clubSeleccionat
+     * @param $quotaSeleccionada
+     */
     public function __construct($idAposta, $dataAposta, $club1, $club2, $clubSeleccionat, $quotaSeleccionada){
         $this->idAposta = $idAposta;
         $this->dataAposta = $dataAposta;
@@ -26,12 +35,20 @@ class Aposta
 
     }
 
+    /**
+     * Funcio que ens permet asignar una cantitat a l'aposta
+     * @param $value
+     */
     public function setQuantitat($value){
         $this->quantitat = $value;
     }
 
+    /**
+     * Metode que ens permet calcular les ganancies potencials
+     * @return int
+     */
     public function calculaGanancies(){
-        return intval($this->quantitat * $this->quotaSeleccionada);
+        return floatval($this->quantitat * $this->quotaSeleccionada);
     }
 
 }

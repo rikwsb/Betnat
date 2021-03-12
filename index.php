@@ -1,6 +1,6 @@
 <?php
 
-    require("php/Aposta.php");
+    require("php/Aposta.php"); //Carreguem la classe aposta abans de que carregui la sessio
 
     session_start();
 
@@ -9,6 +9,7 @@
 
     $events = array();
 
+    //Creem els events
     array_push($events, new NouEvent(0, "13/08/2021", "FC Barcelona", "Real Madrid", 1.3, 2.3, 2.8));
     array_push($events, new NouEvent(1, "14/08/2021", "ARRIBA el Beti", "Espanyol", 1.4, 2.5, 2.6));
     array_push($events, new NouEvent(2, "15/08/2021", "PSG", "Manchester United", 1.7, 2.8, 2.9));
@@ -16,6 +17,10 @@
 
     $_SESSION['events'] = serialize($events);
 
+    /**
+     * Funcio que ens permet mostarar els events creats
+     * @param $events
+     */
     function mostrarEvents($events)
     {
 
@@ -77,7 +82,7 @@
 
     <div class="container">
         <div class="cookies w3-card-2 w3-container w3-margin-bottom">
-            <?php
+            <?php //Recorrem l'array emmagatzemat en les cookies en busca d'un event realitzat anteriorment
             if(isset($_COOKIE['apostesPagades'])){
                 $lmao = json_decode($_COOKIE['apostesPagades']);
                 echo 'APOSTES COMPLETADES: <br>';

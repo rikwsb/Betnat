@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4b00a297-cd98-4011-99ec-cf85eff84da3" name="Default Changelist" comment="Rubedo">
+      <change beforePath="$PROJECT_DIR$/confirmaAposta.php" beforeDir="false" afterPath="$PROJECT_DIR$/confirmaAposta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Aposta.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Aposta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/NouEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/NouEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/apostar.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/apostar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/confirmacioApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/confirmacioApostes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/guardarApostesCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/guardarApostesCookies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/realitzaApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/realitzaApostes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realitzarApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/realitzarApostes.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/rikwsb/Betnat" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.1" id="3c7b4423-1116-479b-9404-15b67ec93cf1" name="127.0.0.1" />
+    </servers>
+  </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="C:\xampp\htdocs\Betnat" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/Betnat" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1pD7zSNITkA5xMZLGGavjHasaYP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Presta/modules/klspedidos/klspedidos.php" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="PHP Built-in Web Server.XAMPP">
+    <configuration name="index.php" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/Betnat/index.php" useFirstLineBreakpoints="true" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="XAMPP" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.php" />
+      <item itemvalue="PHP Built-in Web Server.XAMPP" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\CarlosGonzález\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b00a297-cd98-4011-99ec-cf85eff84da3" name="Default Changelist" comment="" />
+      <created>1614706071098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614706071098</updated>
+      <workItem from="1614706074477" duration="86000" />
+      <workItem from="1614707038903" duration="2858000" />
+      <workItem from="1614710493750" duration="2633000" />
+      <workItem from="1614762475601" duration="6163000" />
+      <workItem from="1614774824295" duration="4961000" />
+      <workItem from="1614792701259" duration="9478000" />
+      <workItem from="1614804006204" duration="1557000" />
+      <workItem from="1614847152089" duration="13809000" />
+      <workItem from="1614873466406" duration="10938000" />
+      <workItem from="1614961404994" duration="14940000" />
+      <workItem from="1615050293229" duration="163000" />
+      <workItem from="1615050472234" duration="1428000" />
+      <workItem from="1615248492918" duration="563000" />
+      <workItem from="1615249081921" duration="434000" />
+      <workItem from="1615307341472" duration="9943000" />
+      <workItem from="1615319740487" duration="802000" />
+      <workItem from="1615320628088" duration="1863000" />
+      <workItem from="1615397053300" duration="1754000" />
+      <workItem from="1615398949935" duration="5406000" />
+      <workItem from="1615461375965" duration="2004000" />
+      <workItem from="1615463690248" duration="3167000" />
+      <workItem from="1615536595451" duration="4531000" />
+    </task>
+    <task id="LOCAL-00001" summary="Rubedo">
+      <created>1615248639403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615248639403</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Rubedo">
+      <created>1615248881581</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615248881581</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$USER_HOME$/PhpstormProjects/ProyectoMatriculas" />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Rubedo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rubedo" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php/apostar.php</url>
+          <line>119</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php/apostar.php</url>
+          <line>121</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php/apostar.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="index.php">
+        <watch expression="$_REQUEST" />
+        <watch expression="$_SERVER[&quot;MIBDIRS&quot;]" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

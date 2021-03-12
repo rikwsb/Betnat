@@ -21,7 +21,7 @@
     </thead>
 
     <tbody>
-        <?php require("php/confirmacioApostes.php"); ?>
+        <?php require("php/confirmacioApostes.php"); //Executem el fitxer que ens permet confirmar les apostes?>
     </tbody>
 
 </table>

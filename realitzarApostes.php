@@ -23,9 +23,9 @@
         </tr>
         </thead>
         <tbody>
-            <?php mostrarApostar(); ?>
-            <?php if(count($_SESSION['apostes']) != 0) {
-                mostrarCombi();
+            <?php if(count($_SESSION['apostes']) != 0) { //Nomes mostrem les apostes si s'ha realitzat alguna
+                mostrarApostar(); //Mostrem les apostes
+                mostrarCombi(); //Mostrem el bloc que l'aposta combinada
             }else{
                 echo "<tr><td colspan='6' style='text-align: center'>No hi ha apostes</td></tr>";
             }?>

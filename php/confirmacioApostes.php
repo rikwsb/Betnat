@@ -16,9 +16,9 @@ $idApostaConfirmada = null;
         $total = 0;
         $quotaTotal = 0;
 
-        foreach($apostes as $ap){
-            $apostaSeleccionada = buscarAposta($ap->idAposta, $apostes);
-            $apostaSeleccionada->setQuantitat($quantitat);
+        foreach($apostes as $ap){ //En el cas de que sigui combinada, agafem totes les apostes i les procesem
+            $apostaSeleccionada = buscarAposta($ap->idAposta, $apostes); //Seleccionem l'aposta (objecte)
+            $apostaSeleccionada->setQuantitat($quantitat); //L'assignem la quantitat al objecte
             $total += floatval($apostaSeleccionada->quantitat);
             $quotaTotal += floatval($apostaSeleccionada->quotaSeleccionada);
             guardaAposta($apostaSeleccionada);
@@ -33,6 +33,10 @@ $idApostaConfirmada = null;
     //}
 }
 
+/**
+ * Funcio que ens permet mostrar les apostes confirmades per HTML
+ * @param $ap
+ */
 function mostrarApostat($ap){
     echo "<tr>";
     echo "<td>" . $ap->dataAposta . "</td>";
@@ -44,6 +48,11 @@ function mostrarApostat($ap){
     echo "</tr>";
 }
 
+/**
+ * Metode que ens permet mostrar el bloc de la combinada per HTML
+ * @param $total
+ * @param $quota
+ */
 function combinada($total, $quota){
     $ganancies = floatval($total) * floatval($quota);
     echo '<tr class="w3-dark-grey">';
@@ -56,6 +65,12 @@ function combinada($total, $quota){
     echo '</tr>';
 }
 
+/**
+ * Metode que ens permet buscar un objecte de tipus Aposta i retornar-lo
+ * @param $id
+ * @param $array
+ * @return mixed|null
+ */
 function buscarAposta($id, $array){
     $betSelected = null;
 
@@ -68,6 +83,10 @@ function buscarAposta($id, $array){
     return $betSelected;
 }
 
+/**
+ * Metode que ens permet guardar les apostes confirmades
+ * @param $aposta
+ */
 function guardaAposta($aposta){
     if(!isset($_SESSION['apostesConfirmades'])){
         $_SESSION['apostesConfirmades'] = array();
