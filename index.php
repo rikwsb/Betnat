@@ -43,13 +43,13 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>JSP Page</title>
+    <title>Betnat :)</title>
     <link type="text/css" rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <nav class="menu w3-card">
         <ul class="menu-list">
-            <li><a href="#"><h1>BETNAT EL FUSTER</h1></a></li>
+            <li><a href="#"><h1>BETNAT EL FERRER</h1></a></li>
             <li><a href="#"><img width="72" src="media/index.png"></a></li>
             <li><a href="#"><h2>NUMERO D'APOSTES <?php echo count($_SESSION['apostes']); ?></h2></a></li>
         </ul>
