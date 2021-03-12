@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b00a297-cd98-4011-99ec-cf85eff84da3" name="Default Changelist" comment="Rubedo">
-      <change beforePath="$PROJECT_DIR$/confirmaAposta.php" beforeDir="false" afterPath="$PROJECT_DIR$/confirmaAposta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Aposta.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Aposta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/NouEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/NouEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/apostar.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/apostar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/confirmacioApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/confirmacioApostes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/guardarApostesCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/guardarApostesCookies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/realitzaApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/realitzaApostes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realitzarApostes.php" beforeDir="false" afterPath="$PROJECT_DIR$/realitzarApostes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <workItem from="1615398949935" duration="5406000" />
       <workItem from="1615461375965" duration="2004000" />
       <workItem from="1615463690248" duration="3167000" />
-      <workItem from="1615536595451" duration="4531000" />
+      <workItem from="1615536595451" duration="8572000" />
     </task>
     <task id="LOCAL-00001" summary="Rubedo">
       <created>1615248639403</created>
@@ -159,25 +153,6 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/php/apostar.php</url>
-          <line>119</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/php/apostar.php</url>
-          <line>121</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/php/apostar.php</url>
-          <line>5</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="index.php">
         <watch expression="$_REQUEST" />

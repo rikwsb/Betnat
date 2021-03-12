@@ -31,6 +31,7 @@
     $clubSeleccionat = "";
     $quota = 0;
     $quotaTotal = 0;
+    $numApostes = 0;
 
     foreach($apostes as $aS){ //Recorrem totes les apostes
         $seleccio = explode('-', $aS); //Separem el id del event del id de la quota marcada
@@ -48,13 +49,15 @@
             $clubSeleccionat = $evSe->club2;
         }
 
-
-        $quotaTotal += floatval($quota);
-        $GLOBALS['$quotaTotal'] = $quotaTotal;
+        $numApostes++;
+        $quotaTotal += floatval($quota) - 1;
         array_push($apostesRealitzades, new Aposta($aS, $evSe->dataEvent, $evSe->club1, $evSe->club2, $clubSeleccionat, $quota)); //Creem un nou objecte/aposta
 
         $_SESSION['apostat'] = $apostesRealitzades;
     }
+
+    $GLOBALS['quotaTotal'] = calcularCombinada($quotaTotal, $numApostes);
+    $_SESSION['quotaCombi'] = $GLOBALS['quotaTotal'];
 
     /**
      * Funcio que ens permet mostrar les apostes per html i interactuar amb aquests
@@ -84,7 +87,7 @@
             <td></td>
             <td></td>
             <td>COMBINADA</td>
-            <td>" . getQuotaCombinada() . "</td>
+            <td>" . getCombinada() . "</td>
             <td><input class='w3-input' type='number' name='quantitat'></td>
             <td><button class='w3-button w3-green' type='submit' name='bet' value='combi'>BET</button></td>
             </tr>
@@ -130,8 +133,13 @@ function arrayRemoveAposta($arrayEvent, $arrayApostes, $idToErase)
 /**
  * @return mixed Ens permet obtenir la quota total en el cas de que es faci una aposta combinada
  */
-function getQuotaCombinada(){
+function getCombinada(){
     return $GLOBALS['quotaTotal'];
+}
+
+function calcularCombinada($quotaTotal, $numApostes){
+    $combi = (1 + $quotaTotal) * $numApostes;
+    return $combi;
 }
 
 

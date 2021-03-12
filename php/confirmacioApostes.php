@@ -13,18 +13,16 @@ $idApostaConfirmada = null;
 
     if($idApostaConfirmada == "combi"){
 
-        $total = 0;
         $quotaTotal = 0;
+        $quotaTotal = $_SESSION['quotaCombi'];
 
         foreach($apostes as $ap){ //En el cas de que sigui combinada, agafem totes les apostes i les procesem
             $apostaSeleccionada = buscarAposta($ap->idAposta, $apostes); //Seleccionem l'aposta (objecte)
-            $apostaSeleccionada->setQuantitat($quantitat); //L'assignem la quantitat al objecte
-            $total += floatval($apostaSeleccionada->quantitat);
-            $quotaTotal += floatval($apostaSeleccionada->quotaSeleccionada);
+            $apostaSeleccionada->setQuantitat(floatval(round(($quantitat / count($apostes)), 1, PHP_ROUND_HALF_UP))); //L'assignem la quantitat al objecte i redondejem el primer decimal per evitar mostrar 20 numeros decimals
             guardaAposta($apostaSeleccionada);
             mostrarApostat($apostaSeleccionada);
         }
-        combinada($total, $quotaTotal);
+        combinada($quantitat, $quotaTotal);
     } else {
         $apostaSeleccionada = buscarAposta($idApostaConfirmada, $apostes);
         $apostaSeleccionada->setQuantitat($quantitat);
@@ -53,14 +51,14 @@ function mostrarApostat($ap){
  * @param $total
  * @param $quota
  */
-function combinada($total, $quota){
-    $ganancies = floatval($total) * floatval($quota);
+function combinada($quantitat, $quota){
+    $ganancies = $quota * $quantitat;
     echo '<tr class="w3-dark-grey">';
     echo '<td></td>';
     echo '<td></td>';
     echo '<td>COMBINADA</td>';
     echo '<td>' . $quota . '</td>';
-    echo '<td>' . $total . '</td>';
+    echo '<td>' . $quantitat . '</td>';
     echo '<td>' . $ganancies . '</td>';
     echo '</tr>';
 }
