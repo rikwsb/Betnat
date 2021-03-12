@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-
+@import url('https://www.w3schools.com/w3css/4/w3.css');
 body{
     background-color: #efefef;
+}
+
+table{
+    width: 70% !important;
+    margin: auto;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: Oxygen;
 }
 
 a{
@@ -17,6 +23,27 @@ a{
 h1, h2{
     color: #1f1f1f;
     font-family: "Oxygen";
+}
+
+.title-subpage{
+    text-align: center;
+    padding: 1%;
+}
+
+.w3-button:hover{
+    background-color: whitesmoke !important;
+    transition: 0.4s ;
+}
+
+.w3-button{
+    transition: 0.4s;
+}
+
+input[type=number] {
+    width: 25%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .title{
@@ -29,7 +56,16 @@ h1, h2{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    padding: 2.5vh;
+    padding: 1.5vh;
+}
+
+.menu * {
+    font-size: 2.5vh;
+}
+
+.menu {
+    background-color: white;
+    margin-bottom: 4vh;
 }
 
 /* ········ CONTAINER ··········· */
@@ -46,6 +82,12 @@ h1, h2{
     justify-content: space-around;
 }
 
+.cookies{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+
 /* ····· BUTTONS ······· */
 
 .action-buttons.container {
@@ -53,7 +95,6 @@ h1, h2{
 }
 
 .action-buttons button{
-
     border-radius: 4px;
     padding: 1.5vh 2.75vh;
     border: none;
@@ -61,10 +102,17 @@ h1, h2{
 }
 
 .buttons-bet button {
-    border-radius: 4px;
-    padding: 0.5vh 1.75vh;
-    border: none;
-    margin: 0vh 1vh;
+    transition: 0.4s;
+     border-radius: 4px;
+     padding: 0.5vh 1.75vh;
+     border: none;
+     margin: 0vh 1vh;
+ }
+
+.buttons-bet button:hover {
+    background-color: #1f1f1f;
+    color: white;
+    transition: 0.4s;
 }
 
 .buttons-bet {

@@ -3,11 +3,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JSP Page</title>
     <link type="text/css" rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<h1>Hello World!</h1>
+<h1 class="title-subpage">Apostes realitzades</h1>
 
-<table>
+<table class="w3-table-all w3-card-4">
     <thead>
     <tr>
         <th>DATA</th>
@@ -25,9 +26,11 @@
 
 </table>
 
-<form method="POST" action="php/guardarApostesCookies.php">
-    <button type="submit" name="setCookie" value="hola">TORNAR A LES MEVES APOSTES</button>
-</form>
+<div class="action-buttons container">
+    <form method="POST" action="php/guardarApostesCookies.php">
+        <button class="w3-button w3-ripple" type="submit" name="setCookie" value="hola" style="background-color: #29333f; color: white;">TORNAR A LES MEVES APOSTES</button>
+    </form>
+</div>
 
 </body>
 </html>

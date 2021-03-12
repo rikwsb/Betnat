@@ -9,9 +9,9 @@
     <link type="text/css" rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1 class="title-subpage">Les teves apostes</h1>
 
-    <table>
+    <table class="w3-table-all w3-card-4">
         <thead>
         <tr>
             <th>DATA</th>
@@ -23,21 +23,22 @@
         </tr>
         </thead>
         <tbody>
-
-        <?php mostrarApostar(); ?>
-        <form action='realitzarApostes.php' method='post'>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>COMBINADA</td>
-                <td><?php echo getQuotaCombinada(); ?></td>
-                <td><input type='number' name='quantitat'></td>
-                <td><button type='submit' name='bet' value='combi'>BET</button></td>
-            </tr>
-        </form>
+            <?php mostrarApostar(); ?>
+            <?php if(count($_SESSION['apostes']) != 0) {
+                mostrarCombi();
+            }else{
+                echo "<tr><td colspan='6' style='text-align: center'>No hi ha apostes</td></tr>";
+            }?>
         </tbody>
 
     </table>
 
+    <div class="action-buttons container">
+        <form action="index.php">
+            <button class="w3-button w3-ripple" type="submit" style="background-color: #29333f; color: white;">TORNAR A L'INICI</button>
+        </form>
+    </div>
+
 </body>
 </html>
+

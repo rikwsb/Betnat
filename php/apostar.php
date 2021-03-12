@@ -63,13 +63,27 @@
             echo "<tr><form action='realitzarApostes.php' method='post'>";
             echo "<td>" . $ap->dataAposta . "</td>";
             //echo "<td><table><tr><td>" . $ap->logoClub1 . "</td></tr><tr><td>" . $ap->logoClub2 . "</td></tr></table></td>";
-            echo "<td><table><tr><td>" . $ap->club1 . "</td></tr><tr><td>" . $ap->club2 . "</td></tr></table></td>";
+            echo "<td><table style='margin: 0;' class='w3-table w3-bordered'><tbody><tr><td>" . $ap->club1 . "</td></tr><tr><td>" . $ap->club2 . "</td></tr></tbody></table></td>";
             echo "<td>" . $ap->clubSeleccionat . "</td>";
             echo "<td>" . $ap->quotaSeleccionada . "</td>";
             echo "<td><input type='number' name='quantitat'></td>";
-            echo "<td><button type='submit' name='bet' value='" . $ap->idAposta . "'>BET</button><button type='submit' name='delete' value='" . $ap->idAposta . "'>DEL</button></td>";
+            echo "<td><button class='w3-button w3-green' type='submit' name='bet' value='" . $ap->idAposta . "'>BET</button><button class='w3-button w3-red' type='submit' name='delete' value='" . $ap->idAposta . "'>DEL</button></td>";
             echo "</form></tr>";
         }
+
+    }
+
+    function mostrarCombi(){
+       echo "<form action='realitzarApostes.php' method='post'>
+            <tr>
+            <td></td>
+            <td></td>
+            <td>COMBINADA</td>
+            <td>" . getQuotaCombinada() . "</td>
+            <td><input type='number' name='quantitat'></td>
+            <td><button class='w3-button w3-green' type='submit' name='bet' value='combi'>BET</button></td>
+            </tr>
+            </form>";
     }
 
     function buscarEvent($id, $array){
@@ -95,7 +109,7 @@ function arrayRemoveAposta($arrayEvent, $arrayApostes, $idToErase)
 {
     $index = array();
     foreach($arrayApostes as $ar){
-        if($ar->idAposta != $idToErase){
+        if($ar != $idToErase){
                 array_push($index, $ar);
         }
     }

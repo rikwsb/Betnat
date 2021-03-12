@@ -46,7 +46,7 @@ function mostrarApostat($ap){
 
 function combinada($total, $quota){
     $ganancies = floatval($total) * floatval($quota);
-    echo '<tr>';
+    echo '<tr class="w3-dark-grey">';
     echo '<td></td>';
     echo '<td></td>';
     echo '<td>COMBINADA</td>';
